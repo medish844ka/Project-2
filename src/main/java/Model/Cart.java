@@ -20,7 +20,7 @@ public class Cart {
     @JoinColumn(name = "user_id")
     public User user;
 
-    public int quantity;
+    public int quantity;        
 
     public Cart() {
 
