@@ -1,4 +1,4 @@
-package Model;
+package General.Model;
 import javax.persistence.*;
 import java.util.Date;
 

@@ -1,7 +1,7 @@
-package Service;
+package General.Service;
 
-import DAO.CartRepository;
-import Model.Cart;
+import General.DAO.CartRepository;
+import General.Model.Cart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -33,5 +33,7 @@ public class CartService {
         return getCartbyCreatedDate();
     }
 
+    public List<Cart> deleteAllCart() {return getAllCart();
     }
+}
 

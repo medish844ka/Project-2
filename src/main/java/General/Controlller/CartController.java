@@ -1,6 +1,7 @@
-package Controlller;
-import Model.Cart;
-import Service.CartService;
+package General.Controlller;
+
+import General.Model.Cart;
+import General.Service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,6 +30,9 @@ public class CartController {
     public Cart getCartByUserId(@PathVariable String UserId) {
         return cartService.getCartbyUserId();
     }
+    @DeleteMapping
+    public List<Cart> deleteAllCart(){return cartService.deleteAllCart();}
+
 }
 
 
